@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Paciente</title>
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Paciente</h1>
+        
+        <form id="registroPacienteForm">
+            <div class="form-group">
+                <label for="nombre">Nombre del paciente:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="municipio">Municipio:</label>
+                <input type="text" id="municipio" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tipoDocumento">Tipo de documento:</label>
+                <select id="tipoDocumento" required>
+                    <option value="DUI">DUI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="numeroDocumento">Número de documento:</label>
+                <input type="text" id="numeroDocumento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="motivoConsulta">Motivo de consulta:</label>
+                <textarea id="motivoConsulta" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/registro.js"></script>
+</body>
+</html>
